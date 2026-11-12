@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="cs" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plánovaný výpadek služeb - New Technology Software</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(12px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800 min-h-screen flex flex-col justify-between selection:bg-amber-100 selection:text-amber-900">
+
+    <!-- Top Navigation / Header -->
+    <header class="w-full py-5 px-4 sm:px-8 border-b border-slate-100 bg-white/90 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-amber-500 flex items-center justify-center text-white font-bold shadow-lg shadow-amber-500/20">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                    </svg>
+                </div>
+                <div>
+                    <span class="font-bold text-base sm:text-lg tracking-tight text-slate-900 block leading-tight">NTS CZ</span>
+                    <span class="text-xs text-slate-500 font-medium">New Technology Software</span>
+                </div>
+            </div>
+            <div class="flex items-center space-x-2 bg-amber-50 text-amber-800 border border-amber-200/80 px-3.5 py-1.5 rounded-full text-xs font-semibold shadow-sm">
+                <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+                <span>Plánovaná odstávka</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow max-w-4xl w-full mx-auto px-4 sm:px-8 py-10 sm:py-16 animate-fade-in">
+        
+        <!-- Hero Warning Banner -->
+        <div class="bg-gradient-to-b from-amber-50/60 to-white border border-amber-200/60 rounded-3xl p-6 sm:p-10 shadow-xl shadow-amber-500/5 mb-10 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-40 h-40 bg-amber-200/20 rounded-full blur-3xl -mr-16 -mt-16 pointer-events-none"></div>
+            
+            <div class="flex flex-col sm:flex-row sm:items-start gap-6 mb-6">
+                <div class="w-16 h-16 rounded-2xl bg-amber-500 text-white flex items-center justify-center shrink-0 shadow-md shadow-amber-500/30">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                    </svg>
+                </div>
+                <div class="space-y-2">
+                    <span class="text-xs font-bold tracking-wider uppercase text-amber-700 bg-amber-100/70 px-3 py-1 rounded-full inline-block">Důležité oznámení</span>
+                    <h1 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Plánovaný výpadek služeb</h1>
+                </div>
+            </div>
+
+            <div class="bg-white/80 backdrop-blur border border-slate-200/80 p-5 sm:p-6 rounded-2xl shadow-sm">
+                <p class="text-slate-700 text-base sm:text-lg leading-relaxed">
+                    <strong class="text-slate-900 font-semibold">Upozornění:</strong> Dne Pátek, 13.11.2026, dojde k dočasnému odpojení některých našich služeb. Tato odstávka proběhne od cca 19:30 do cca 23:30. Tak s tím prosím počítejte.
+                </p>
+            </div>
+        </div>
+
+        <!-- Divider Line with Centered Warning Icon Badge -->
+        <div class="relative flex items-center justify-center my-12">
+            <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                <div class="w-full border-t border-slate-200"></div>
+            </div>
+            <div class="relative bg-white px-4 flex items-center justify-center">
+                <div class="w-11 h-11 rounded-full bg-amber-50 border border-amber-200 shadow-sm flex items-center justify-center text-amber-600">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Article Sections / Cards -->
+        <div class="space-y-6">
+            <!-- Section 1 -->
+            <section class="bg-white border border-slate-200/80 rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div class="flex items-start gap-4 sm:gap-6">
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-sm sm:text-base shrink-0">
+                        01
+                    </div>
+                    <div class="space-y-2">
+                        <h2 class="text-lg sm:text-xl font-bold text-slate-900">Jakých služeb se odstávka týká?</h2>
+                        <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                            Plánovaná odstávka se týká pouze služeb a aplikací provozovaných na serveru NTS 2(3). Pokud Vám přišlo tohle oznámení nebo se zobrazuje na konkrétní stránce, výpadek se této aplikace / stránky týká. Celkový počet služeb: 12
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2 -->
+            <section class="bg-white border border-slate-200/80 rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div class="flex items-start gap-4 sm:gap-6">
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-sm sm:text-base shrink-0">
+                        02
+                    </div>
+                    <div class="space-y-2">
+                        <h2 class="text-lg sm:text-xl font-bold text-slate-900">Jak dlouho odstávka trvá?</h2>
+                        <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                            Plánovaná délka odstávky je odhadována na 4 hodiny. Pravděpodobně to ale stihneme dříve.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3 -->
+            <section class="bg-white border border-slate-200/80 rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div class="flex items-start gap-4 sm:gap-6">
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-sm sm:text-base shrink-0">
+                        03
+                    </div>
+                    <div class="space-y-2">
+                        <h2 class="text-lg sm:text-xl font-bold text-slate-900">Je možné během této odstávky aplikace / služby používat v omezeném režimu?</h2>
+                        <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                            Ne, během této odstávky dojde k odpojení přípojky a RAID serveru, služby tedy nebude možné použít ani v nouzovém režimu a nebude možné se dostat dál přes obrazovku o hlášení výpadku. Jakmile bude vše dokončeno, bude vše fungovat normálně.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4 -->
+            <section class="bg-white border border-slate-200/80 rounded-2xl p-6 sm:p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
+                <div class="flex items-start gap-4 sm:gap-6">
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center font-bold text-sm sm:text-base shrink-0">
+                        04
+                    </div>
+                    <div class="space-y-2">
+                        <h2 class="text-lg sm:text-xl font-bold text-slate-900">Co bude změněno?</h2>
+                        <p class="text-slate-600 leading-relaxed text-sm sm:text-base">
+                            Na serveru proběhne výměna klíčů KEK, KMYC a KLOCK, migrace bezpečnostních klíčů a certifikátů, instalace a nastavení nových bezpečnostních certifikátů pro bezpečné spouštění a použití nových dávkových souborů. Vaše data nebudou ovlivněna.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full border-t border-slate-100 bg-slate-50/50 py-8 px-4 text-center mt-12">
+        <div class="max-w-4xl mx-auto space-y-2">
+            <p class="text-slate-700 font-medium text-sm sm:text-base">Děkujeme za pochopení, <span class="text-slate-900 font-bold">New Technology Software</span></p>
+            <p class="text-xs text-slate-400">© 2026 New Technology Software. Všechna práva vyhrazena.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
